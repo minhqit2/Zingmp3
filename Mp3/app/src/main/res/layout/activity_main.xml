@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity"
+android:background="@drawable/nen"
+android:orientation="vertical"
+android:weightSum="5">
+
+<LinearLayout
+    android:id="@+id/line1"
+    android:layout_width="fill_parent"
+    android:layout_height="24dp"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:layout_weight="0.1">
+
+    <ImageButton
+        android:id="@+id/image_btn1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:src="@drawable/clock"
+        />
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sóng Gió Jack,K-ICM"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_weight="2" />
+    <ImageButton
+        android:id="@+id/image_btn2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:src="@drawable/caidat"
+        />
+
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/line2"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="3"
+    android:background="@drawable/zingmp3">
+    <ImageView
+        android:id="@+id/image_view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/songgio"
+        />
+
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/line3"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.4">
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_gravity="center_vertical"
+        android:max="100"
+        android:progress="100"
+        android:indeterminate="false" />
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/line4"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.4"
+    android:weightSum="5">
+    <ImageButton
+        android:id="@+id/image_btn3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/alarm"/>
+    <Button
+        android:id="@+id/btn_Pause"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Pause"/>
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Play"/>
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Stop"/>
+    <ImageButton
+        android:id="@+id/image_btn6"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/refresh"/>
+
+</LinearLayout>
+
+</LinearLayout>
